@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Denk+One&display=swap');
+*{
+    padding: 0xp;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.fundo{
+    background-image: linear-gradient(45deg,#090f13,#1b66ff) ;
+    height: 100vh;
+    color: white;
+    font-family: 'Denk One';
+    text-align: center;
+}
+
+.calculadora{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 6px;
+    margin: 2px;
+    padding: 16px;
+}
+
+#resultado{
+    background-color: white;
+    width: 307px;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+}
+
+.botao{
+    width: 3em;
+    height: 3em;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: white;
+}
+.botao:hover{
+    background-color: black;
+}
+.igual:hover{
+    background-color: rgb(30, 134, 194);
+}
+.zero:hover{
+    background-color: black;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 6px;
+}
+
+.igual{
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    height: 100%;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: white;
+}
+
+.zero{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 100%;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: white;
+}
